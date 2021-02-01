@@ -26,7 +26,7 @@ const store = createStore(rootReducer, composeEnhancers(
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter>{/* Set basePath before deployment of real app  */}
         <App />
       </BrowserRouter>
     </React.StrictMode>

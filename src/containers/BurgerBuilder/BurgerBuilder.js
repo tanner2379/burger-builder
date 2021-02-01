@@ -10,7 +10,7 @@ import OrderSummary from '../../components/Burger/OrderSummary/OrderSummary';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
   // constructor(props) {
   //   super(props);
   //   this.state = {...}

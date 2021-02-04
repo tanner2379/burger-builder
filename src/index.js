@@ -27,7 +27,9 @@ const store = createStore(rootReducer, composeEnhancers(
   applyMiddleware(thunk, sagaMiddleware)
 ));
 
-sagaMiddleware.run(watchAuth, watchOrders, watchburgerBuilder);
+sagaMiddleware.run(watchAuth);
+sagaMiddleware.run(watchOrders);
+sagaMiddleware.run(watchburgerBuilder);
 
 ReactDOM.render(
   <Provider store={store}>
